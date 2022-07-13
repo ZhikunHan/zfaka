@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_boot_demo?
+    characterEncoding: utf8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+    druid:
+      db-type: com.alibaba.druid.pool.DruidDataSource
+
+  redis:
+    database: 1
+    host: localhost
+    port: 6379
+
+  # ThreadPool
+  task:
+    execution:
+      pool:
+        core-size: 5
+        max-size: 15
+        queue-capacity: 100
+
+server:
+  address: http://localhost:8080
+

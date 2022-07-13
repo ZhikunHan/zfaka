@@ -5,7 +5,7 @@ package org.hantiv.zfaka.response;
  * @Date Created in 10:07 2022/7/13
  * @Description:
  */
-public class CommonReturnType {
+public class ResponseModel {
     // 状态常量
     public static final int STATUS_SUCCESS = 0;
     public static final int STATUS_FAILURE = 1;
@@ -14,14 +14,14 @@ public class CommonReturnType {
     private int status;
     // 业务数据
     private Object data;
-    public CommonReturnType() {
+    public ResponseModel() {
         this.status = STATUS_SUCCESS;
     }
-    public CommonReturnType(Object data) {
+    public ResponseModel(Object data) {
         this.status = STATUS_SUCCESS;
         this.data = data;
     }
-    public CommonReturnType(int status, Object data) {
+    public ResponseModel(int status, Object data) {
         this.status = status;
         this.data = data;
     }

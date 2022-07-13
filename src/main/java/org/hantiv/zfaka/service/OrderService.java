@@ -8,6 +8,6 @@ import org.hantiv.zfaka.entity.Order;
  * @Description:
  */
 public interface OrderService {
-    Order createOrder(int userId, int itemId, int amount, int promotionId, String itemStockLogId);
-    void createOrderAsync(int userId, int itemId, int amount, int promotionId);
+    Order createOrder(int userId, int itemId, int amount, Integer promotionId, String itemStockLogId);
+    void createOrderAsync(int userId, int itemId, int amount, Integer promotionId);
 }
